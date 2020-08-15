@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Search">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/search_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:id="@+id/search_toolbar_back"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:maxLines="1"
+                android:text="Search results"
+                android:layout_weight="2"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:id="@+id/search_toolbar_title"
+                android:layout_height="match_parent"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_rv_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/progress_custom_search"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fetching results"
+                />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

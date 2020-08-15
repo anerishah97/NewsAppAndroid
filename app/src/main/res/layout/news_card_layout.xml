@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="16dp"
+        android:layout_height="140dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/card_layout_articleid"
+            />
+
+        <ImageView
+            android:layout_width="132dp"
+            android:layout_height="match_parent"
+            android:id="@+id/card_layout_image"
+            />
+        <RelativeLayout
+            android:layout_margin="4dp"
+            android:layout_width="208dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:id="@+id/card_layout_title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:singleLine="false"
+                android:text="Australia coronavirus live news: "
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="17h Ago"
+                    android:textSize="16sp"
+                    android:textColor="#2a2a2a"
+                    android:id="@+id/card_layout_time"
+                    android:layout_marginRight="8dp"
+                    />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#4a4a4a"
+                    android:layout_marginLeft="8dp"
+                    android:text="Politics"
+                    android:textSize="16sp"
+                    android:id="@+id/card_layout_section"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:id="@+id/card_layout_bookmark"
+            android:src="@drawable/ic_turned_in_not_black_24dp"
+            />
+
+
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

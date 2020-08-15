@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F6F6F6</color>
+    <color name="colorPrimaryDark">#4F1EA4</color>
+    <color name="colorAccent">#736cb5</color>
+    <color name="bookmarkColor">#FC3A01</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="chartPurple">#7570C1</color>
+</resources>

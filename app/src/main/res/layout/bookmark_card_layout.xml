@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/bookmark_layout_main"
+    android:layout_width="match_parent"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Bookmarked Articles"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/bookmark_layout_no_bookmarks"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/bookmark_layout_whole_card"
+        android:layout_height="240dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:id="@+id/bookmark_layout_image"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/bookmark_layout_id"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bookmark_layout_title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:maxLines="3"
+                android:layout_margin="4dp"
+                android:textColor="@color/black"
+                android:text="Coronavirus putting world on track for new Great Depression, says WTO"
+                android:ellipsize="end"
+                />
+
+            <LinearLayout
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="17h Ago"
+                    android:textSize="16sp"
+                    android:textColor="#2a2a2a"
+                    android:id="@+id/bookmark_layout_time"
+                    android:layout_marginRight="8dp"
+                    />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#4a4a4a"
+                    android:layout_marginLeft="8dp"
+                    android:text="Politics"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/bookmark_layout_section"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="end"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:id="@+id/bookmark_layout_bookmark"
+                    android:src="@drawable/ic_turned_in_not_black_24dp"
+                    android:layout_height="24dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
